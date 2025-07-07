@@ -1,6 +1,6 @@
 {
-    "name": "post/buttons",
-    "description": "Kirby writer extensions made easy",
+    "name": "smongey/writer-marks",
+    "description": "The easiest way to add custom marks in Kirby 4/5 Writer fields",
     "license": "MIT",
     "type": "kirby-plugin",
     "version": "0.1.0",
@@ -10,6 +10,8 @@
             "email": "skye@lavenderbits.com"
         }
     ],
+    "keywords": ["kirby", "plugin", "writer", "marks", "editor"],
+    "homepage": "https://github.com/smongey/writer-marks",
     "require": {
         "getkirby/composer-installer": "^1.1"
     },

@@ -2,7 +2,7 @@
 
 use Kirby\Toolkit\A;
 
-Kirby::plugin("post/buttons", [
+Kirby::plugin("smongey/writer-marks", [
     "hooks" => [
         "panel.route:after" => function (
             Kirby\Http\Route $route,
@@ -12,18 +12,18 @@ Kirby::plugin("post/buttons", [
         ) {
             if ($response->type() === "text/html") {
                 $options = [];
-                $options["marks"] = option("post.buttons.marks", []);
-                $options["links"] = option("post.buttons.links", []);
+                $options["marks"] = option("smongey.writermarks.marks", []);
+                $options["links"] = option("smongey.writermarks.links", []);
                 echo "<script nonce='" .
                     kirby()->nonce() .
-                    "'>window.post = {}; window.post.buttons = JSON.parse('" .
+                    "'>window.smongey = {}; window.smongey.writermarks = JSON.parse('" .
                     json_encode($options) .
                     "');</script>'";
             }
         },
         "system.loadPlugins:after" => function () {
-            $marks = option("post.buttons.marks", []);
-            $links = option("post.buttons.links", []);
+            $marks = option("smongey.writermarks.marks", []);
+            $links = option("smongey.writermarks.links", []);
             $elems = A::merge($marks, $links);
             // var_dump($marks);
             // exit;

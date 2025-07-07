@@ -1,15 +1,25 @@
-# Post Buttons (Working Title)
+# Writer Marks
 
 > The easiest way to add custom marks in Kirby 4 Writer fields
 
-The buttons plugin lets you add custom marks to any `Writer` fields by simply adding a few options to your `config/config.php`.
+Writer Marks lets you add custom marks to any `Writer` fields by simply adding a few options to your `config/config.php`.
+
+## Installation
+
+Install via Composer:
+
+```bash
+composer require smongey/writer-marks
+```
+
+Or download and extract the plugin to your `site/plugins/writer-marks` directory.
 
 ## Adding Marks
 
 ```config/config.php
 return [
   "debug" => true,
-  "post.buttons" => [
+  "smongey.writermarks" => [
     "marks" => [
       "highlight" => [
         "icon" => "sparkling",
@@ -64,7 +74,7 @@ You can add them like so:
 
 ```config/config.php
 return [
-  'post.buttons' => [
+  'smongey.writermarks' => [
     "links" => [
       "buttonLink" => [
         "label" => "Special Link Button",
@@ -96,4 +106,4 @@ These tasks still need to be completed before a public release;
 - [] Report issue with inlining JS into the panel to Kirby
 - [] Add comments
 - [] Touch up ReadMe
-- [] **Find a better name**
+- [x] **Find a better name** (Now called Writer Marks)

@@ -1,6 +1,6 @@
 const marks = {};
 
-for (const [name, schema] of Object.entries(window.post.buttons.marks ?? {})) {
+for (const [name, schema] of Object.entries(window.smongey.writermarks.marks ?? {})) {
   marks[name] = {
     get button() {
       return {
@@ -29,7 +29,7 @@ for (const [name, schema] of Object.entries(window.post.buttons.marks ?? {})) {
     },
   };
 }
-for (const [name, schema] of Object.entries(window.post.buttons.links ?? {})) {
+for (const [name, schema] of Object.entries(window.smongey.writermarks.links ?? {})) {
   marks[name] = {
     get button() {
       return {
@@ -155,6 +155,6 @@ for (const [name, schema] of Object.entries(window.post.buttons.links ?? {})) {
   };
 }
 
-window.panel.plugin("post/buttons", {
+window.panel.plugin("smongey/writer-marks", {
   writerMarks: marks,
 });
