@@ -1,0 +1,21 @@
+{
+    "name": "post/buttons",
+    "description": "Kirby writer extensions made easy",
+    "license": "MIT",
+    "type": "kirby-plugin",
+    "version": "0.1.0",
+    "authors": [
+        {
+            "name": "Skye Ewers",
+            "email": "skye@lavenderbits.com"
+        }
+    ],
+    "require": {
+        "getkirby/composer-installer": "^1.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "getkirby/composer-installer": true
+        }
+    }
+}
