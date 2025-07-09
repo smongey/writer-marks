@@ -3,7 +3,6 @@
     "description": "The easiest way to add custom marks in Kirby 4/5 Writer fields",
     "license": "MIT",
     "type": "kirby-plugin",
-    "version": "0.1.0",
     "authors": [
         {
             "name": "Skye Ewers",
